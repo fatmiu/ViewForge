@@ -28,5 +28,11 @@ fun ForgeScreen(
         ) {
             Text(text = "basic shape")
         }
+        Button(
+            modifier = Modifier.padding(16.dp),
+            onClick = { onNavigate(UiEvent.Navigate(Routes.BALL_CLICKER_GAME)) }
+        ) {
+            Text(text = "ball clicker game")
+        }
     }
 }
