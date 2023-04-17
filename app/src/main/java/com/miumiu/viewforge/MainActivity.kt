@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.miumiu.viewforge.ui.canvas_basic.BasicShapeScreen
 import com.miumiu.viewforge.ui.canvas_basic.ball_clicker_game.BallClickerGameScreen
+import com.miumiu.viewforge.ui.canvas_basic.weight_picker.WeightPickerScreen
 import com.miumiu.viewforge.ui.forge.ForgeScreen
 import com.miumiu.viewforge.ui.theme.ViewForgeTheme
 import com.miumiu.viewforge.util.Routes
@@ -31,6 +32,9 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(Routes.BALL_CLICKER_GAME) {
                         BallClickerGameScreen()
+                    }
+                    composable(Routes.WEIGHT_PICKER) {
+                        WeightPickerScreen()
                     }
                 }
             }

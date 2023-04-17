@@ -34,5 +34,11 @@ fun ForgeScreen(
         ) {
             Text(text = "ball clicker game")
         }
+        Button(
+            modifier = Modifier.padding(16.dp),
+            onClick = { onNavigate(UiEvent.Navigate(Routes.WEIGHT_PICKER)) }
+        ) {
+            Text(text = "weight picker")
+        }
     }
 }
