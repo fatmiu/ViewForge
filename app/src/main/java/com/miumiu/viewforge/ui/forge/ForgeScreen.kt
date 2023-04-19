@@ -40,5 +40,11 @@ fun ForgeScreen(
         ) {
             Text(text = "weight picker")
         }
+        Button(
+            modifier = Modifier.padding(16.dp),
+            onClick = { onNavigate(UiEvent.Navigate(Routes.CLOCK)) }
+        ) {
+            Text(text = "clock")
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.miumiu.viewforge.ui.canvas_basic.ball_clicker_game
+package com.miumiu.viewforge.ui.canvas_basic
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.gestures.detectTapGestures
