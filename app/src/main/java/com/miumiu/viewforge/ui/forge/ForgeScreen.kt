@@ -52,5 +52,11 @@ fun ForgeScreen(
         ) {
             Text(text = "roulette")
         }
+        Button(
+            modifier = Modifier.padding(16.dp),
+            onClick = { onNavigate(UiEvent.Navigate(Routes.BASIC_PATH)) }
+        ) {
+            Text(text = "basic path")
+        }
     }
 }

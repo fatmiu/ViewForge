@@ -7,4 +7,5 @@ object Routes {
     const val WEIGHT_PICKER = "weight_picker"
     const val CLOCK = "clock"
     const val ROULETTE = "Roulette"
+    const val BASIC_PATH = "basic_path"
 }
