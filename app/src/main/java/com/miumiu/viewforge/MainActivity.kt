@@ -6,9 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.miumiu.viewforge.ui.canvas_basic.BasicShapeScreen
 import com.miumiu.viewforge.ui.canvas_basic.BallClickerGameScreen
+import com.miumiu.viewforge.ui.canvas_basic.BasicShapeScreen
 import com.miumiu.viewforge.ui.canvas_basic.ClockScreen
+import com.miumiu.viewforge.ui.canvas_basic.RouletteScreen
 import com.miumiu.viewforge.ui.canvas_basic.weight_picker.WeightPickerScreen
 import com.miumiu.viewforge.ui.forge.ForgeScreen
 import com.miumiu.viewforge.ui.theme.ViewForgeTheme
@@ -39,6 +40,9 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(Routes.CLOCK) {
                         ClockScreen()
+                    }
+                    composable(Routes.ROULETTE) {
+                        RouletteScreen()
                     }
                 }
             }

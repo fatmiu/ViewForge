@@ -6,4 +6,5 @@ object Routes {
     const val BALL_CLICKER_GAME = "ball_clicker_game"
     const val WEIGHT_PICKER = "weight_picker"
     const val CLOCK = "clock"
+    const val ROULETTE = "Roulette"
 }

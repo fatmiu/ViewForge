@@ -46,5 +46,11 @@ fun ForgeScreen(
         ) {
             Text(text = "clock")
         }
+        Button(
+            modifier = Modifier.padding(16.dp),
+            onClick = { onNavigate(UiEvent.Navigate(Routes.ROULETTE)) }
+        ) {
+            Text(text = "roulette")
+        }
     }
 }
