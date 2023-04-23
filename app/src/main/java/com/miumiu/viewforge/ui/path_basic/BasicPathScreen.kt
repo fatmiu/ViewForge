@@ -1,12 +1,9 @@
 package com.miumiu.viewforge.ui.path_basic
 
-import androidx.compose.animation.core.Animatable
-import androidx.compose.animation.core.tween
+import android.graphics.Paint
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
@@ -16,19 +13,16 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.PathOperation
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeJoin
-import androidx.compose.ui.graphics.asAndroidPath
-import androidx.compose.ui.graphics.asComposePath
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.clipPath
-import androidx.compose.ui.graphics.drawscope.rotate
+import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.unit.dp
-import kotlin.math.PI
-import kotlin.math.atan2
 
 @Composable
 fun BasicPathScreen() {
 //    BasicPath()
-    PathOperations()
+//    PathOperations()
+    TextOnPath()
 }
 
 @Composable
@@ -116,6 +110,29 @@ fun TransformationsAndClipping() {
                 color = Color.Red,
                 topLeft = Offset(400f, 400f),
                 size = Size(400f, 400f)
+            )
+        }
+    }
+}
+
+@Composable
+fun TextOnPath() {
+    Canvas(modifier = Modifier.fillMaxSize()) {
+        val path = android.graphics.Path().apply {
+            moveTo(200f, 800f)
+            quadTo(600f, 400f, 1000f, 800f)
+        }
+        drawContext.canvas.nativeCanvas.apply {
+            drawTextOnPath(
+                "Hello World!",
+                path,
+                30f,
+                50f,
+                Paint().apply {
+                    color = android.graphics.Color.RED
+                    textSize = 70f
+                    textAlign = Paint.Align.CENTER
+                }
             )
         }
     }
