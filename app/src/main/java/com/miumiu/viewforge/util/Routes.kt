@@ -9,4 +9,5 @@ object Routes {
     const val ROULETTE = "Roulette"
     const val BASIC_PATH = "basic_path"
     const val PATH_ANIM = "path_anim"
+    const val PATH_EFFECT = "path_effect"
 }
