@@ -58,5 +58,11 @@ fun ForgeScreen(
         ) {
             Text(text = "basic path")
         }
+        Button(
+            modifier = Modifier.padding(16.dp),
+            onClick = { onNavigate(UiEvent.Navigate(Routes.PATH_ANIM)) }
+        ) {
+            Text(text = "path anim")
+        }
     }
 }

@@ -13,6 +13,7 @@ import com.miumiu.viewforge.ui.canvas_basic.RouletteScreen
 import com.miumiu.viewforge.ui.canvas_basic.weight_picker.WeightPickerScreen
 import com.miumiu.viewforge.ui.forge.ForgeScreen
 import com.miumiu.viewforge.ui.path_basic.BasicPathScreen
+import com.miumiu.viewforge.ui.path_basic.PathAnimScreen
 import com.miumiu.viewforge.ui.theme.ViewForgeTheme
 import com.miumiu.viewforge.util.Routes
 
@@ -47,6 +48,9 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(Routes.BASIC_PATH) {
                         BasicPathScreen()
+                    }
+                    composable(Routes.PATH_ANIM) {
+                        PathAnimScreen()
                     }
                 }
             }
