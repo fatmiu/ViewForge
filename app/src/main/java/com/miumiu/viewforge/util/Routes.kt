@@ -10,4 +10,5 @@ object Routes {
     const val BASIC_PATH = "basic_path"
     const val PATH_ANIM = "path_anim"
     const val PATH_EFFECT = "path_effect"
+    const val GENDER_PICKER = "gender_picker"
 }

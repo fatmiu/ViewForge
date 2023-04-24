@@ -15,6 +15,7 @@ import com.miumiu.viewforge.ui.forge.ForgeScreen
 import com.miumiu.viewforge.ui.path_basic.BasicPathScreen
 import com.miumiu.viewforge.ui.path_basic.PathAnimScreen
 import com.miumiu.viewforge.ui.path_basic.PathEffectScreen
+import com.miumiu.viewforge.ui.path_basic.gender_picker.GenderPickerScreen
 import com.miumiu.viewforge.ui.theme.ViewForgeTheme
 import com.miumiu.viewforge.util.Routes
 
@@ -55,6 +56,9 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(Routes.PATH_EFFECT) {
                         PathEffectScreen()
+                    }
+                    composable(Routes.GENDER_PICKER){
+                        GenderPickerScreen()
                     }
                 }
             }
