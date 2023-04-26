@@ -76,5 +76,11 @@ fun ForgeScreen(
         ) {
             Text(text = "gender picker")
         }
+        Button(
+            modifier = Modifier.padding(8.dp),
+            onClick = { onNavigate(UiEvent.Navigate(Routes.TIC_TAC_TOE)) }
+        ) {
+            Text(text = "tic tac toe")
+        }
     }
 }
