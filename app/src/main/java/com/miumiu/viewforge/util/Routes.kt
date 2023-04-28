@@ -13,4 +13,6 @@ object Routes {
     const val PATH_DEMONSTRATION = "path_demonstration"
     const val GENDER_PICKER = "gender_picker"
     const val TIC_TAC_TOE = "tic_tac_toe"
+    const val BASIC_IMAGE = "basic_image"
+    const val IMAGE_REVEAL = "image_reveal"
 }

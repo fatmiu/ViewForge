@@ -3,6 +3,7 @@ package com.miumiu.viewforge
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -11,10 +12,11 @@ import com.miumiu.viewforge.ui.canvas_basic.BasicShapeScreen
 import com.miumiu.viewforge.ui.canvas_basic.ClockScreen
 import com.miumiu.viewforge.ui.canvas_basic.RouletteScreen
 import com.miumiu.viewforge.ui.canvas_basic.weight_picker.WeightPickerScreen
-import com.miumiu.viewforge.ui.forge.ForgeScreen
+import com.miumiu.viewforge.ui.ForgeScreen
+import com.miumiu.viewforge.ui.image_basic.BasicImageScreen
+import com.miumiu.viewforge.ui.image_basic.ImageRevealScreen
 import com.miumiu.viewforge.ui.path_basic.BasicPathScreen
 import com.miumiu.viewforge.ui.path_basic.PathAnimScreen
-import com.miumiu.viewforge.ui.path_basic.PathDemonstration
 import com.miumiu.viewforge.ui.path_basic.PathDemonstrationScreen
 import com.miumiu.viewforge.ui.path_basic.PathEffectScreen
 import com.miumiu.viewforge.ui.path_basic.gender_picker.GenderPickerScreen
@@ -31,6 +33,7 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController = navController, startDestination = Routes.FORGE) {
                     composable(Routes.FORGE) {
                         ForgeScreen(
+                            16.dp,
                             onNavigate = {
                                 navController.navigate(it.route)
                             }
@@ -68,6 +71,12 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(Routes.TIC_TAC_TOE) {
                         TicTacToeScreen()
+                    }
+                    composable(Routes.BASIC_IMAGE) {
+                        BasicImageScreen()
+                    }
+                    composable(Routes.IMAGE_REVEAL) {
+                        ImageRevealScreen()
                     }
                 }
             }
