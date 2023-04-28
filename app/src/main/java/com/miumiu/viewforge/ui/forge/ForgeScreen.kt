@@ -72,6 +72,12 @@ fun ForgeScreen(
         }
         Button(
             modifier = Modifier.padding(8.dp),
+            onClick = { onNavigate(UiEvent.Navigate(Routes.PATH_DEMONSTRATION)) }
+        ) {
+            Text(text = "path demonstration")
+        }
+        Button(
+            modifier = Modifier.padding(8.dp),
             onClick = { onNavigate(UiEvent.Navigate(Routes.GENDER_PICKER)) }
         ) {
             Text(text = "gender picker")

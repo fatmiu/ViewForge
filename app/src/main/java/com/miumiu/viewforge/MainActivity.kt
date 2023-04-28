@@ -14,6 +14,8 @@ import com.miumiu.viewforge.ui.canvas_basic.weight_picker.WeightPickerScreen
 import com.miumiu.viewforge.ui.forge.ForgeScreen
 import com.miumiu.viewforge.ui.path_basic.BasicPathScreen
 import com.miumiu.viewforge.ui.path_basic.PathAnimScreen
+import com.miumiu.viewforge.ui.path_basic.PathDemonstration
+import com.miumiu.viewforge.ui.path_basic.PathDemonstrationScreen
 import com.miumiu.viewforge.ui.path_basic.PathEffectScreen
 import com.miumiu.viewforge.ui.path_basic.gender_picker.GenderPickerScreen
 import com.miumiu.viewforge.ui.path_basic.tictactoe.TicTacToeScreen
@@ -57,6 +59,9 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(Routes.PATH_EFFECT) {
                         PathEffectScreen()
+                    }
+                    composable(Routes.PATH_DEMONSTRATION) {
+                        PathDemonstrationScreen()
                     }
                     composable(Routes.GENDER_PICKER) {
                         GenderPickerScreen()
